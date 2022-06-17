@@ -3,11 +3,16 @@
 
 
 {% block body %}
-<div class="container">
-    <h1 class="text-center">Products</h1>
-    {% for product in products_list %}
-        <h2>{{ product.product_title }}</h2>
-        <img src="{{ product.product_image.url }}" alt="" width="100%">
-    {% endfor %}
+<div class="products container">
+    <h1 class="text-center mb-3">Products</h1>
+    <div class="row align-items-center">
+        {% for product in products_list %}
+            <div class="col-sm-4" id="product">
+                <p class="text-center">{{ product.product_title }}</p>
+                <img src="{{ product.product_image.url }}" alt="" width="100%">
+                <p class="text-center">{{ product.product_price }}</p>
+            </div>
+        {% endfor %}
+    </div>
 </div>
 {% endblock body %}

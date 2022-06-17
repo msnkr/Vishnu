@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView, ListView, DetailView
+from django.views.generic import TemplateView, ListView, DetailView, FormView
 from .models import Products
+from .forms import ContactPageForm
 
 # Create your views here.
 class HomePageView(TemplateView):
@@ -15,5 +16,7 @@ class ProductDetailView(DetailView):
     pass
 
 
-class ContactView(TemplateView):
+class ContactView(FormView):
     template_name = 'vish_app/contact-us.html'
+    form_class = ContactPageForm
+    success_url = '/thanks/'

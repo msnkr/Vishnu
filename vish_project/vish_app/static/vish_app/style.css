@@ -1,0 +1,35 @@
+/* Variables  */
+:root {
+    --night: #363062;
+    --navy: #4D4C7D;
+    --purple: #827397;
+    --beige: #E9D5CA;
+}
+
+body {
+    background-color: white;
+}
+
+.nav-link {
+    color: var(--navy) !important;
+}
+
+h1, h2, p {
+    color: var(--navy);
+}
+
+.img-text {
+    margin-top:20%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer {
+    background-color: var(--night);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+footer p {
+    color: var(--beige);
+}

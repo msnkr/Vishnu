@@ -1,0 +1,13 @@
+{% extends 'vish_app/base.html' %}
+{% load static %}
+
+
+{% block body %}
+<div class="container">
+    <h1 class="text-center">Products</h1>
+    {% for product in products_list %}
+        <h2>{{ product.product_title }}</h2>
+        <img src="{{ product.product_image.url }}" alt="" width="100%">
+    {% endfor %}
+</div>
+{% endblock body %}

@@ -1,1 +1,36 @@
-<h1>Hello</h1>
+{% extends 'vish_app/base.html' %}
+{% load static %}
+
+
+{% block body %}
+<img src="{% static 'vish_app/pexels-pixabay-159397.jpg' %}" alt="" width="100%">
+<div class="container col-auto">
+    <h1 class="mt-2 mb-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum error quia ut rem provident suscipit aspernatur impedit molestiae? Veniam eaque repellat nam voluptatum laboriosam totam a quo, numquam eos vel blanditiis, esse unde, natus molestias sequi assumenda distinctio velit neque at. Eius nemo ullam, cumque nihil dolores expedita voluptate nobis alias reprehenderit in repellendus ducimus ipsam nulla omnis voluptates et voluptatem officia velit? Culpa repellendus nulla eligendi rerum in praesentium, sapiente ab temporibus nemo labore cum at consequuntur eius? Perferendis, id blanditiis aliquid, expedita doloremque animi quia vero excepturi enim libero eaque cumque. Consequatur nobis reiciendis hic quidem? Debitis, temporibus?</p>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <img src="{% static 'vish_app/pexels-phenyo-deluxe-1370082.jpg' %}" alt="" width="100%">
+        </div>
+        <div class="col-sm">
+            <h2 class="img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore consequuntur quaerat ab non culpa ex fugit quasi voluptatem, quis delectus.</h2>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-sm">
+            <h2 class="img-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ab distinctio quaerat suscipit tempore alias itaque omnis, consectetur natus ad.</h2>
+        </div>
+        <div class="col-sm">
+            <img src="{% static 'vish_app/pexels-phenyo-deluxe-1370082.jpg' %}" alt="" width="100%">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="about-us text-center my-5">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde doloribus fuga iusto aspernatur? Pariatur deleniti fuga aliquid hic, voluptate, adipisci nobis, corporis illum maiores eius excepturi esse deserunt. Recusandae earum id ullam rerum temporibus, optio quia autem sed deserunt libero obcaecati suscipit architecto blanditiis itaque voluptate! Aperiam praesentium repellendus nihil ex molestiae eius autem sit omnis blanditiis, saepe, nobis placeat, doloribus suscipit perspiciatis similique officia earum architecto iste! Quidem unde dolorem iusto eos qui magnam obcaecati quia, expedita rerum. Placeat et sint earum nostrum consectetur sunt incidunt excepturi, sequi laudantium velit voluptas corporis aspernatur? Vitae amet molestiae corrupti dolore recusandae?</p>
+    </div>
+</div>
+{% endblock body %}

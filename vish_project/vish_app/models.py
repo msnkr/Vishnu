@@ -4,7 +4,7 @@ from django.db import models
 class Products(models.Model):
     product_title = models.CharField(max_length=50)
     product_description = models.TextField()
-    product_price = models.FloatField()
+    product_price = models.CharField(max_length=10)
     product_image = models.ImageField()
 
     def __str__(self):

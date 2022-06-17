@@ -13,7 +13,7 @@ class ProductListView(ListView):
 
 
 class ProductDetailView(DetailView):
-    pass
+    model = Products
 
 
 class ContactView(FormView):

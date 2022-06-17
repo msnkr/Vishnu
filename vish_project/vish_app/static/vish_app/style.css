@@ -6,6 +6,10 @@
     --beige: #E9D5CA;
 }
 
+/* 
+Design 
+logomakr.com/app/554CKW */
+
 body {
     background-color: white;
 }
@@ -32,4 +36,8 @@ footer {
 
 footer p {
     color: var(--beige);
+}
+
+#productLink a {
+    text-decoration: none;
 }

@@ -9,3 +9,13 @@ class Products(models.Model):
 
     def __str__(self):
         return self.product_title
+
+
+class ContactPage(models.Model):
+    name = models.CharField(max_length=10)
+    email = models.EmailField()
+    number = models.CharField(max_length=12)
+    message = models.TextField()
+
+    def __str__(self):
+        return self.name

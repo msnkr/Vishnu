@@ -16,7 +16,14 @@ class ProductDetailView(DetailView):
     model = Products
 
 
-class ContactView(FormView):
-    template_name = 'vish_app/contact-us.html'
-    form_class = ContactPageForm
-    success_url = '/thanks/'
+def ContactPageView(request):
+    form = ContactPageForm()
+    if request.method == 'POST':
+        form = ContactPageForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return thank_you(request)
+        else:
+            return ValidationError('Error')
+    else:
+        return render(request, 'vish_app/contact-us.html', {'form':form})

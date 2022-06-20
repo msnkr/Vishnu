@@ -27,3 +27,7 @@ def ContactPageView(request):
             return ValidationError('Error')
     else:
         return render(request, 'vish_app/contact-us.html', {'form':form})
+
+
+def thank_you(request):
+    return render(request, 'vish_app/thank-you.html')

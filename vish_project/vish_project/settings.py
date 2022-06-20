@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'crispy_forms',
     'vish_app.apps.VishAppConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -128,3 +129,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Media
 MEDIA_URL = '/media/'
 MEDIA_ROOT = Path(BASE_DIR, 'media')
+
+# Crispy Forms 
+CRISPY_TEMPLATE_PACK = 'bootstrap3'

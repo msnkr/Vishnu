@@ -3,26 +3,35 @@
 {% load crispy_forms_tags %}
 
 {% block body %}
-<div class="container">
+<div class="container text-center" id="contactUsPage">
     {% if form %}
+        <form method="POST">
         {% csrf_token %}
-            <form method="POST">
-                <div class="row">
-                    <div class="col-auto mt-5">
-                        {{ form.name|as_crispy_field }}
-                    </div>
-                    <div class="col-auto mt-5">
-                        {{ form.email|as_crispy_field }}
-                    </div>
-                    <div class="col-auto mt-5">
-                        {{ form.number|as_crispy_field }}
-                    </div>
+            <div class="row">
+                <div class="col-sm mt-5 text-center m-lg-2">
+                    {{ form.name|as_crispy_field }}
                 </div>
-                <div class="col-auto">
-                    {{ form.message|as_crispy_field }}
+                <div class="col-sm mt-5 text-center m-lg-2">
+                    {{ form.email|as_crispy_field }}
                 </div>
-            </form>
+                <div class="col-sm mt-5 text-center m-lg-2">
+                    {{ form.number|as_crispy_field }}
+                </div>
+            </div>
+            <div class="col-sm text-center m-lg-2">
+                {{ form.message|as_crispy_field }}
+            </div>
+            <button type="submit" class="btn btn-outline-primary mt-3">Submit</button>
+        </form>
     {% endif %}
-    <button type="submit" class="btn btn-outline-primary mt-3">Submit</button>
+</div>
+<div class="container">
+    <div id="contactInfo">
+        <p>Fill out the form or contact us at: </p>
+        <h4>Email: vish@grvinvestments.co.za <i class="fa fa-envelope" aria-hidden="true"></i></h4>
+        <h4><i class="fa fa-phone" aria-hidden="true"></i> +27 800 800 8000</h4>
+        <h4>Follow Us On: <i class="fa fa-facebook-official" aria-hidden="true"></i></h4>
+        <h4>Whatsapp Us: <i class="fa fa-whatsapp" aria-hidden="true"></i></h4>
+    </div>
 </div>
 {% endblock body %}

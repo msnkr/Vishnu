@@ -10,34 +10,11 @@
 Design 
 logomakr.com/app/554CKW */
 
-body {
-    background-color: white;
+
+#contactUsPage {
+    margin-top: 5%;
 }
 
-.nav-link {
-    color: var(--navy) !important;
-}
-
-h1, h2, p {
-    color: var(--navy);
-}
-
-.img-text {
-    margin-top:20%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-footer {
-    background-color: var(--night);
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-footer p {
-    color: var(--beige);
-}
-
-#productLink a {
-    text-decoration: none;
+#contactMessage {
+    margin-top: 5%;
 }

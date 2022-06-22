@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 # Create your models here.
 class Products(models.Model):
@@ -6,6 +7,7 @@ class Products(models.Model):
     product_description = models.TextField()
     product_price = models.CharField(max_length=10)
     product_image = models.ImageField()
+    date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
         return self.product_title

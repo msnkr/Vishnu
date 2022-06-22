@@ -10,6 +10,16 @@
 </div>
 <div class="container text-center">
     <h2 class="mb-5">Latest Products</h2>
+    <div class="row">
+            {% if products %}
+                {% for product in products %}
+                    <div class="col-sm p-5">
+                        <p>{{ product.product_title }}</p>
+                        <img src="{{ product.product_image.url }}" alt="" width="100%">
+                    </div>
+                {% endfor %}
+            {% endif %}
+    </div>
 </div>
 <div class="container">
     <div class="row">

@@ -9,7 +9,7 @@
         {% for product in products_list %}
             <div class="col-sm-4" id="product">
                 <a href="{% url 'product-detail-view' product.id %}"><p class="text-center" id="productLink">{{ product.product_title }}</p></a>
-                <img src="{{ product.product_image.url }}" alt="" width="100%">
+                <img src="{{ product.product_image.url }}" alt="" width="350" height="300" class="p-3">
                 <p class="text-center">R{{ product.product_price }}</p>
             </div>
         {% endfor %}

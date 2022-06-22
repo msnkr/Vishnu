@@ -11,10 +11,28 @@ Design
 logomakr.com/app/554CKW */
 
 
+a {
+    text-decoration: none;
+}
+
 #contactUsPage {
     margin-top: 5%;
 }
 
 #contactMessage {
     margin-top: 5%;
+}
+
+#homePageProducts {
+    border: #363062 solid 1px;
+    border-radius: 10px;
+}
+
+#productLink, #productLink a {
+    background-color: #363062;
+    color: #E9D5CA;
+    text-decoration: none;
+    padding: 2%;
+    border: #827397 solid 1px;
+    border-radius: 10px;
 }

@@ -9,13 +9,13 @@
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum error quia ut rem provident suscipit aspernatur impedit molestiae? Veniam eaque repellat nam voluptatum laboriosam totam a quo, numquam eos vel blanditiis, esse unde, natus molestias sequi assumenda distinctio velit neque at. Eius nemo ullam, cumque nihil dolores expedita voluptate nobis alias reprehenderit in repellendus ducimus ipsam nulla omnis voluptates et voluptatem officia velit? Culpa repellendus nulla eligendi rerum in praesentium, sapiente ab temporibus nemo labore cum at consequuntur eius? Perferendis, id blanditiis aliquid, expedita doloremque animi quia vero excepturi enim libero eaque cumque. Consequatur nobis reiciendis hic quidem? Debitis, temporibus?</p>
 </div>
 <div class="container text-center">
-    <h2 class="mb-5">Latest Products</h2>
-    <div class="row">
+    <h2 class="mb-1">Latest Products</h2>
+    <div class="row p-5">
             {% if products %}
                 {% for product in products %}
-                    <div class="col-sm p-5">
+                    <div class="col-sm p-3 m-2" id="homePageProducts">
                         <p>{{ product.product_title }}</p>
-                        <img src="{{ product.product_image.url }}" alt="" width="100%">
+                        <img src="{{ product.product_image.url }}" alt="" width="210" height="180">
                     </div>
                 {% endfor %}
             {% endif %}

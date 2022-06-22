@@ -7,14 +7,12 @@ from .forms import ContactPageForm
 class HomePageView(TemplateView):
     template_name = 'vish_app/home-page.html'
     model = Products
-    ordering = ['-date']
-    
-    
 
     def get_context_data(self, **kwargs):
         context = super(HomePageView, self).get_context_data(**kwargs)
-        context['products'] = Products.objects.all()
+        context['products'] = Products.objects.order_by('-date')[:3]
         return context
+
 
 
 class ProductListView(ListView):

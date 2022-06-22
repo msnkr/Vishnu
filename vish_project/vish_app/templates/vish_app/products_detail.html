@@ -5,11 +5,10 @@
 {% block body %}
 <div class="container">
     <div class="row">
-        <h1 class="text-center mx-4">{{ products.product_title }}</h1>
+        <h1 class="text-center mx-4 p-2">{{ products.product_title }}</h1>
         <div class="col-sm">
-            <img src="{{ products.product_image.url }}" alt="" width="100%" class="my-2">
+            <img src="{{ products.product_image.url }}" alt="" width="100%" class="my-4">
             <p class="">The selling price is: R{{ products.product_price }}</p>
-            <p>Do you want to enquire about this product?</p>
         </div>
         <div class="col-sm align-items-center">
             <p class="text-center  my-2 mx-4">{{ products.product_description }}</p>

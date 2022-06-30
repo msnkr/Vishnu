@@ -28,11 +28,9 @@ a {
     border-radius: 10px;
 }
 
-#productLink, #productLink a {
+#productLink, #productLink a, #productPrice {
     background-color: #363062;
     color: #E9D5CA;
     text-decoration: none;
     padding: 2%;
-    border: #827397 solid 1px;
-    border-radius: 10px;
 }

@@ -14,5 +14,10 @@
             <p class="text-center  my-2 mx-4">{{ products.product_description }}</p>
         </div>
     </div>
+    {% if form %}
+        <form method="POST">
+            {{form}}
+        </form>
+    {% endif %}
 </div>
 {% endblock body %}

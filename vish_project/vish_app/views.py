@@ -23,7 +23,6 @@ class ProductListView(ListView):
 class ProductDetailView(DetailView):
     model = Products
 
-
 def ContactPageView(request):
     form = ContactPageForm()
     if request.method == 'POST':

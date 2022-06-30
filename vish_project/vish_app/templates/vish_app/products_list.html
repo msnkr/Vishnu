@@ -3,13 +3,13 @@
 
 
 {% block body %}
-<div class="products container">
+<div class="products container mb-5">
     <h1 class="text-center mb-3">Products</h1>
     <div class="row align-items-center">
         {% for product in products_list %}
             <div class="col-sm-4" id="product">
                 <a href="{% url 'product-detail-view' product.id %}"><p class="text-center" id="productLink">{{ product.product_title }}</p></a>
-                <img src="{{ product.product_image.url }}" alt="" width="350" height="300" class="p-3">
+                <a href="{% url 'product-detail-view' product.id %}"><img src="{{ product.product_image.url }}" alt="" width="350" height="300" class="p-3"></a>
                 <p class="text-center">R{{ product.product_price }}</p>
             </div>
         {% endfor %}

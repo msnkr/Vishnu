@@ -42,3 +42,12 @@ a {
 #contactInfo {
     color: var(--blue);
 }
+
+#homePageText {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1, h2, h3, h4, a {
+    color: var(--gold);
+}

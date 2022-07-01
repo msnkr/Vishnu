@@ -1,9 +1,9 @@
 /* Variables  */
 :root {
-    --night: #363062;
-    --navy: #4D4C7D;
-    --purple: #827397;
-    --beige: #E9D5CA;
+    --blue: #92B4EC;
+    --white: #FFFFFF;
+    --yellow: #FFE69A;
+    --gold: #FFD24C
 }
 
 /* 
@@ -24,13 +24,21 @@ a {
 }
 
 #homePageProducts {
-    border: #363062 solid 1px;
+    border: var(--blue) solid 1px;
     border-radius: 10px;
 }
 
-#productLink, #productLink a, #productPrice {
-    background-color: #363062;
-    color: #E9D5CA;
+#productLink, #productLink a, #productPrice, #productDetailTitle {
+    background-color: var(--blue);
+    color: var(--white);
     text-decoration: none;
     padding: 2%;
+}
+#productDescription {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#contactInfo {
+    color: var(--blue);
 }

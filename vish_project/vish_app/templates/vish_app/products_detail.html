@@ -3,17 +3,19 @@
 
 
 {% block body %}
-<div class="container mb-5">
-    <div class="row">
-        <div class="col-sm">
-            <img src="{{ products.product_image.url }}" alt="" width="500" height="500" class="my-4">
+<div class="detailListFull">
+    <div class="container mb-lg-5">
+        <div class="row">
+            <div class="col-sm">
+                <img id="detailImage" src="{{ products.product_image.url }}" alt="" width="500" height="500" class="my-lg-4">
+            </div>
+            <div class="col-sm align-items-center">
+                <h1 class="text-center mt-5 mx-4 p-2" id="productDetailTitle">{{ products.product_title }}</h1>
+                <p class="text-start mt-5 my-2 mx-4" id="productDescription">{{ products.product_description }}</p>
+            </div>
         </div>
-        <div class="col-sm align-items-center">
-            <h1 class="text-center mt-5 mx-4 p-2" id="productDetailTitle">{{ products.product_title }}</h1>
-            <p class="text-start mt-5 my-2 mx-4" id="productDescription">{{ products.product_description }}</p>
-        </div>
+        <p class="text-center mt-5" id="productPrice">R{{ products.product_price }}</p>
+        <p>You can enquire about this product <a href="{% url 'contact-us' %}">here</a></p>
     </div>
-    <p class="text-center mt-5" id="productPrice">R{{ products.product_price }}</p>
-    <p>You can enquire about this product <a href="{% url 'contact-us' %}">here</a></p>
 </div>
 {% endblock body %}

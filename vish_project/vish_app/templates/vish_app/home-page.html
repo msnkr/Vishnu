@@ -3,34 +3,36 @@
 
 
 {% block body %}
-<img src="{% static 'vish_app/pexels-pixabay-159397.jpg' %}" alt="" width="100%" class="mt-5">
-<div class="container col-auto my-5">
-    <h1 class="mt-2 p-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-    <p id="homePageText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum error quia ut rem provident suscipit aspernatur impedit molestiae? Veniam eaque repellat nam voluptatum laboriosam totam a quo, numquam eos vel blanditiis, esse unde, natus molestias sequi assumenda distinctio velit neque at. Eius nemo ullam, cumque nihil dolores expedita voluptate nobis alias reprehenderit in repellendus ducimus ipsam nulla omnis voluptates et voluptatem officia velit? Culpa repellendus nulla eligendi rerum in praesentium, sapiente ab temporibus nemo labore cum at consequuntur eius? Perferendis, id blanditiis aliquid, expedita doloremque animi quia vero excepturi enim libero eaque cumque. Consequatur nobis reiciendis hic quidem? Debitis, temporibus?</p>
-</div>
-<div class="container text-center">
-    <h2 class="mb-1">Latest Products</h2>
-    <div class="row p-2">
-            {% if products %}
-                {% for product in products %}
-                    <div class="col-sm p-3 m-2" id="homePageProducts">
-                        <p id="productDetailTitle">{{ product.product_title }}</p>
-                        <img src="{{ product.product_image.url }}" alt="" width="210" height="180">
-                        <p class="mt-3" id="productPrice">R{{ product.product_price }}</p>
-                    </div>
-                {% endfor %}
-            {% endif %}
-            <p>View our full range of products <a href="{% url 'products-list' %}">here!</a></p>
+<div class="homePageFull">
+    <img src="{% static 'vish_app/pexels-pixabay-159397.jpg' %}" alt="" width="100%" class="mt-5">
+    <div class="container col-auto my-5">
+        <h1 class="mt-2 p-2 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+        <p id="homePageText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum error quia ut rem provident suscipit aspernatur impedit molestiae? Veniam eaque repellat nam voluptatum laboriosam totam a quo, numquam eos vel blanditiis, esse unde, natus molestias sequi assumenda distinctio velit neque at. Eius nemo ullam, cumque nihil dolores expedita voluptate nobis alias reprehenderit in repellendus ducimus ipsam nulla omnis voluptates et voluptatem officia velit? Culpa repellendus nulla eligendi rerum in praesentium, sapiente ab temporibus nemo labore cum at consequuntur eius? Perferendis, id blanditiis aliquid, expedita doloremque animi quia vero excepturi enim libero eaque cumque. Consequatur nobis reiciendis hic quidem? Debitis, temporibus?</p>
     </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-sm mb-5">
-            <img src="#" alt="">
+    <div class="container text-center">
+        <h2 class="mb-1">Latest Products</h2>
+        <div class="row p-2">
+                {% if products %}
+                    {% for product in products %}
+                        <div class="col-sm p-3 m-lg-2 mt-sm-1" id="homePageProducts">
+                            <p id="productDetailTitle">{{ product.product_title }}</p>
+                            <img src="{{ product.product_image.url }}" alt="" width="210" height="180">
+                            <p class="mt-3" id="productPrice">R{{ product.product_price }}</p>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                <p>View our full range of products <a href="{% url 'products-list' %}">here!</a></p>
         </div>
-        <div class="col-sm text-center">
-            <h2>About Us</h2>
-            <p class="text-center m-3 p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex necessitatibus iure recusandae, aliquid vel quia voluptas expedita accusantium dolores esse veritatis impedit labore reprehenderit ad voluptates officiis nihil ullam delectus vitae modi adipisci quaerat nobis. Dolore cupiditate amet soluta nemo doloribus. Alias beatae illum saepe accusantium eligendi quod obcaecati ratione nostrum, cumque consequatur soluta similique earum sunt ipsa aperiam ad minima facere accusamus sequi ducimus cupiditate error amet. Minus, aliquid ab vel dignissimos illum dolorem, officiis quo corrupti, hic praesentium corporis magni odio ipsum voluptates dolorum quis. Molestiae labore porro assumenda, eos illo ipsam, ea, neque reprehenderit fugiat quibusdam sit!</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm mb-lg-5">
+                <img src="#" alt="">
+            </div>
+            <div class="col-sm text-center">
+                <h2>About Us</h2>
+                <p class="text-end m-3 p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex necessitatibus iure recusandae, aliquid vel quia voluptas expedita accusantium dolores esse veritatis impedit labore reprehenderit ad voluptates officiis nihil ullam delectus vitae modi adipisci quaerat nobis. Dolore cupiditate amet soluta nemo doloribus. Alias beatae illum saepe accusantium eligendi quod obcaecati ratione nostrum, cumque consequatur soluta similique earum sunt ipsa aperiam ad minima facere accusamus sequi ducimus cupiditate error amet. Minus, aliquid ab vel dignissimos illum dolorem, officiis quo corrupti, hic praesentium corporis magni odio ipsum voluptates dolorum quis. Molestiae labore porro assumenda, eos illo ipsam, ea, neque reprehenderit fugiat quibusdam sit!</p>
+            </div>
         </div>
     </div>
 </div>

@@ -39,10 +39,6 @@ a {
     margin-right: 20%;
 }
 
-#contactInfo {
-    color: var(--blue);
-}
-
 #homePageText {
     margin-left: 10%;
     margin-right: 10%;
@@ -71,29 +67,33 @@ h1, h2, h3, h4, a {
 
 .homePageFull {
     animation-name: homePageAnimation;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-timing-function: ease-out;
 }
 
 .productListFull {
     animation-name: homePageAnimation;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-timing-function: ease-out;
 }
 
 .detailListFull {
     animation-name: homePageAnimation;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-timing-function: ease-out;
 }
 
 .contactFull {
     animation-name: homePageAnimation;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-timing-function: ease-out;
 }
 
 @keyframes homePageAnimation {
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+
+#whatsappLogo i, .fa-whatsapp i {
+    color: #25D366 !important;
 }
